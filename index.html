@@ -31,7 +31,7 @@
 
 <body class="font-manrope">
     <!-- header -->
-    <header class="md:container mx-auto md:px-16 lg:px-52">
+    <header class="md:container mx-auto px-3 md:px-16 lg:px-52 md:relative">
         <!-- navbar part here -->
         <nav>
             <div class="navbar bg-base-100">
@@ -53,7 +53,7 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl font-extrabold text-4xl">Hockey<span
+                    <a class="btn btn-ghost text-xl font-extrabold text-4xl pl-0">Hockey<span
                             class="text-secondary-color">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -67,7 +67,7 @@
                 </div>
                 <div class="navbar-end">
                     <div class="flex flex-row items-center gap-5">
-                        <i class="fa-solid fa-magnifying-glass hidden md:text-2xl md:block lg:text-3xl"></i>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass hidden md:text-2xl md:block lg:text-3xl"></i></a>
                         <a class="btn btn-theme md:px-5">Get Ticket</a>
                     </div>
                 </div>
@@ -75,11 +75,37 @@
         </nav>
 
         <!-- carousel part -->
-
+        <div class="carousel w-full">
+            <div id="slide1" class="h-[30vh] md:h-[70vh] carousel-item relative w-full bg-[url(./images/1.png)] bg-center bg-no-repeat bg-cover rounded-2xl">
+                <div class="absolute bottom-1 left-1/3 md:bottom-10 md:left-10 flex gap-2">
+                    <a href="#slide3" class="btn btn-circle bg-gray-300 md:bg-gray-950 text-white">❮</a>
+                    <a href="#slide2" class="btn btn-circle bg-gray-300 md:bg-gray-950 text-white">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="h-[30vh] md:h-[70vh] carousel-item relative w-full bg-[url(./images/4.png)] bg-center bg-no-repeat bg-cover rounded-2xl">
+                <div class="absolute bottom-1 left-1/3 md:bottom-10 md:left-10 flex gap-2">
+                    <a href="#slide1" class="btn btn-circle bg-gray-950 text-white">❮</a>
+                    <a href="#slide3" class="btn btn-circle bg-gray-950 text-white">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="h-[30vh] md:h-[70vh] carousel-item relative w-full bg-[url(./images/1.png)] bg-center bg-no-repeat bg-cover rounded-2xl">
+                <div class="absolute bottom-1 left-1/3 md:bottom-10 md:left-10 flex gap-2">
+                    <a href="#slide2" class="btn btn-circle bg-gray-300 md:bg-gray-950 text-white">❮</a>
+                    <a href="#slide1" class="btn btn-circle bg-gray-300 md:bg-gray-950 text-white">❯</a>
+                </div>
+            </div>
+        </div>
+        <!-- absolute position div property -->
+        <div class="md:absolute bottom-10 right-60 bg-[#131318] p-2 md:p-8 md:w-2/6 rounded-2xl space-y-2">
+            <h3 class="text-lg md:text-2xl font-extrabold text-white">Meet all the heroes from the field</h3>
+            <p class="text-sm md:text-base text-gray-400">
+                Beyond the rink, the Chattogram Hockey Game Club is committed to giving back to the community.
+            </p>
+        </div>
     </header>
 
     <!-- main -->
-    <main>
+    <main class="md:container mx-auto px-3 md:px-16 lg:px-52 md:relative">
 
     </main>
 
