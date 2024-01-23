@@ -589,12 +589,14 @@
                         <!-- phone input -->
                         <div class="flex flex-col space-y-2">
                             <label for="phone" class="text-sm md:text-base lg:text-xl font-bold">Phone Number</label>
-                            <input type="text" id="phone" class="bg-[#13131808] rounded-xl py-2 px-3 md:p-5 w-full" placeholder="Enter your phone number">
+                            <input type="text" id="phone" class="bg-[#13131808] rounded-xl py-2 px-3 md:p-5 w-full"
+                                placeholder="Enter your phone number">
                         </div>
                         <!-- massage input -->
                         <div class="flex flex-col space-y-2 md:col-span-2 md:row-span-5">
                             <label for="massage" class="text-sm md:text-base lg:text-xl font-bold">Massage</label>
-                            <textarea id="massage" class="bg-[#13131808] rounded-xl py-2 px-3 md:p-5" cols="10" rows="13" placeholder="Write your massage"></textarea>
+                            <textarea id="massage" class="bg-[#13131808] rounded-xl py-2 px-3 md:p-5" cols="10"
+                                rows="13" placeholder="Write your massage"></textarea>
                         </div>
                         <button class="btn btn-theme md:col-span-2 font-bold">Send Massage</button>
                     </form>
@@ -614,16 +616,40 @@
         </section>
 
     </main>
-
-
-    <br><br><br><br><br><br><br><br><br><br>
     <!-- footer -->
-    <footer>
-
+    <footer class="footer p-10 bg-[#131318] text-base-content text-gray-300 mt-20 space-y-10">
+        <aside>
+            <h3 class="text-white font-extrabold md:text-3xl">Get In Touch</h3>
+            <p>Getting in touch with a sports club is an exciting step for anyone looking to become involved.</p>
+            <p><a href="#"><i class="fa-regular fa-envelope text-red-700"></i> hockeys@support.com</a></p>
+            <p><a href="#"><i class="fa-solid fa-phone text-red-700"></i> (+62) 123-321-543</a></p>
+        </aside>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-10 lg:gap-16 w-full">
+            <nav class="space-y-2">
+                <header class="footer-title">Company</header>
+                <p><a class="link link-hover">About us</a></p>
+                <p><a class="link link-hover">Leadership</a></p>
+                <p><a class="link link-hover">Careers</a></p>
+                <p><a class="link link-hover">News & Article</a></p>
+                <p><a class="link link-hover">Legal Notice</a></p>
+            </nav>
+            <nav class="space-y-2">
+                <header class="footer-title">Support</header>
+                <p><a class="link link-hover">Help Center</a></p>
+                <p><a class="link link-hover">FAQ</a></p>
+                <p><a class="link link-hover">Ticket Support</a></p>
+                <p><a class="link link-hover">Contact Us</a></p>
+            </nav>
+            <nav class="space-y-2 col-span-2 md:col-span-1 mx-auto text-center md:text-start">
+                <header class="footer-title">Services</header>
+                <p><a class="link link-hover">Academy</a></p>
+                <p><a class="link link-hover">Group Lesson</a></p>
+                <p><a class="link link-hover">Private Lesson</a></p>
+                <p><a class="link link-hover">Hockeys for kids</a></p>
+                <p><a class="link link-hover">Hockeys for Adult</a></p>
+            </nav>
+        </div>
     </footer>
-
-
-
 
 </body>
 
